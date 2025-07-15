@@ -1,0 +1,284 @@
+{
+  "profile": {
+    "name": "Guillaume Amselle Andreux",
+    "title": "Développeur Full Stack",
+    "bio": "Après plus de 10 ans en tant que webmaster et chargé de projets web, je me suis spécialisé en développement web full‑stack. Actuellement en CDA - formation d'architecte logiciel, j'allie gestion de sites web et conception UX/UI pour créer des projets à fort impact. Je souhaite intégrer une entreprise valorisant l'humain et l'innovation."
+  },
+  "contact": {
+    "email": "guillaume@andreux.fr",
+    "phone": "0675026732"
+  },
+  "social": [
+    { "name": "cv", "url": "cv.pdf" },
+    { "name": "linkedin", "url": "https://www.linkedin.com/in/guillaume-andreux" },
+    { "name": "github", "url": "https://github.com/Yome07" }
+  ],
+  "skill": {
+    "technic": [
+      "HTML5",
+      "CSS3",
+      "Java/JEE",
+      "MySQL",
+      "Javascript",
+      "WordPress",
+      "Lodel",
+      "Bootstrap",
+      "PHP",
+      "UML",
+      "MERISE",
+      "MVC",
+      "NodeJS",
+      "API REST",
+      "Tailwind CSS"
+    ],
+    "tool": [
+      "Photoshop",
+      "Figma",
+      "Linux",
+      "Git"
+    ],
+    "project_management": [
+      "MERISE",
+      "UML",
+      "Git / Github",
+      "Agile / Scrum",
+      "accessibilité"
+    ],
+    "soft_skill": [
+      "Travail en autonomie",
+      "Adaptabilité en équipe",
+      "Capacité à gérer de nouvelles situations"
+    ]
+  },
+  "language": [
+    { "name": "français", "level": "natif" },
+    { "name": "anglais", "level": "B1" },
+    { "name": "allemand", "level": "notions" },
+    { "name": "espagnol", "level": "notions" }
+  ],
+  "experience": [
+    {
+      "role": "Webmaster développeur",
+      "company": "La Vie Ouvrière",
+      "location": "Montreuil",
+      "start": "2023-01-01",
+      "end": "2024-09-01",
+      "tasks": [
+        "Webmaster du site de la revue La Vie Ouvrière, nvo.fr.",
+        "Remettre en état le site, maintenir le CMS Wordpres et les plugins, et améliorer l'expérience utilisateur. Restauré les fonctionnalités défaillantes, mis à jour WordPress et les plugins, et modifié le thème pour optimiser l'UX.",
+        "Site pleinement fonctionnel, améliorations UX visibles, et meilleure navigation pour les utilisateurs."
+      ]
+    },
+    {
+      "role": "Chargé de projets web",
+      "company": "OpenEdition, CNRS",
+      "location": "Marseille",
+      "start": "2016-06-01",
+      "end": "2021-12-01",
+      "tasks": [
+        "Chargé de projets web pour la plateforme de publication numérique de revues et de livres scientifiques OpenEdition.",
+        "Assurer la mise en place des sites des nouvelles revues et contribuer aux refontes UX/UI des plateformes.",
+        "Participation au projet de refonte du moteur de recherche search.openedition.org et corrections de templates PHP pour les sites de revues.",
+        "Amélioration de l'expérience utilisateur des interfaces et mise en ligne efficace par la création d'une maquette générique pour toutes les nouvelles revues."
+      ]
+    },
+    {
+      "role": "Webmaster animateur",
+      "company": "Association Ancrages",
+      "location": "Marseille",
+      "start": "2014-06-01",
+      "end": "2016-05-01",
+      "tasks": [
+        "Gestion et mise à jour du site web sous WordPress.",
+        "Assurer la maintenance et l'ajout de contenu.",
+        "Mise en place d'une newsletter et gestion d'une crise après un piratage, incluant la restauration du site et le renforcement de la sécurité.",
+        "Mise en place de la Newsletter réussie et continuité de service restaurée après le piratage."
+      ]
+    },
+    {
+      "role": "Webmaster - Développeur",
+      "company": "Librairie Transit",
+      "location": "Marseille",
+      "start": "2014-04-01",
+      "end": "2014-05-01",
+      "tasks": [
+        "Chargé de concevoir un site web avec un CMS.",
+        "Élaboration des wireframes et maquettes, installation de WordPress, création d'un thème sur mesure, suivi de la mise en ligne et formation de l'équipe.",
+        "Site opérationnel et autonome pour la librairie."
+      ]
+    },
+    {
+      "role": "Webmaster intégrateur stagiaire",
+      "company": "Silex Taille Numérique",
+      "location": "Marseille",
+      "start": "2014-02-01",
+      "end": "2014-03-01",
+      "tasks": [
+        "Intégration de la page d'accueil d'un site web",
+        "Développement d'une rubrique en PHP"
+      ]
+    },
+    {
+      "role": "Formateur informatique",
+      "company": "Mon Jardin Numérique",
+      "location": "Marseille",
+      "start": "2013-03-01",
+      "end": "2014-01-01",
+      "tasks": [
+        "Cours d'informatique pour public sénior : Initiation et Bases, Suite bureautique Open Office, Picasa, Windows 8 et Mac OS, Navigation web"
+      ]
+    },
+    {
+      "role": "Animateur multimédia",
+      "company": "Association pour le Logement des Jeunes en Pays d'Aix",
+      "location": "Aix-en-Provence",
+      "start": "2011-09-01",
+      "end": "2013-02-01",
+      "tasks": [
+        "Multimédia : Refonte du site web sous CMS Joomla, Création de documents de communication, Rédaction et publication du journal interne",
+        "Animation : Gestion de la salle multimédia, Aide à l'utilisation du matériel informatique, aide à la création de CV, participation à la vie du foyer"
+      ]
+    },
+    {
+      "role": "Assistant pédagogique en informatique",
+      "company": "Collège Arthur Rimbaud",
+      "location": "Marseille",
+      "start": "2008-09-01",
+      "end": "2011-08-01",
+      "tasks": [
+        "Multimédia : Mise à jour du site web, Réalisation d'un film promotionnel du collège, Montage sous Final Cut, Création de documents de communication, plaquettes, affiches, etc.",
+        "Informatique : Gestion de la salle informatique du collège, Assistance aux élèves et professeurs dans l'utilisation du matériel informatique et multimédia, Animation du club informatique"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "year": 2022,
+      "title": "Titre professionnel Concepteur Développeur d'Applications",
+      "institution": "Afpa, Paris",
+      "details": [
+        "Conception : Merise, UML",
+        "Développement front-end : HTML, CSS, Javascript (jQuery)",
+        "Développement back-end et POO : Java, JEE, Springboot",
+        "Bases de données : SQL, MySQL",
+        "Maquettage, Sécurité, Gestion de projet"
+      ]
+    },
+    {
+      "year": 2016,
+      "title": "Certificat professionnel programmation de sites web",
+      "institution": "CNAM - Aix‑en‑Provence",
+      "details": [
+        "Graphisme : Gestion des images, Ergonomie, Charte graphique, Gimp, Inkscape",
+        "Intégration : HTML5 et CSS3, Bootstrap",
+        "Administration web : Linux, Introduction aux réseaux, Gestion serveur Apache",
+        "Base de données : Modèles conceptuel et relationnel, Algèbre relationnelle, Langage SQL",
+        "Développement : Algorithmique, PHP procédural et POO, Framework MVC, Cookies, Sessions, Formulaires et sécurité"
+      ]
+    },
+    {
+      "year": 2007,
+      "title": "Licence professionnelle Convergence Internet et Audiovisuel Numérique",
+      "institution": "Université Rennes 2",
+      "details": [
+        "Internet: HTML et CSS, Initiation à Flash, Javascript, Création de 2 sites",
+        "Multimédia : Image, son, vidéo numériques, Analyse cinéma, Conduite de projet, Réalisation vidéo"
+      ]
+    },
+    {
+      "year": 2003,
+      "title": "Certificat en Journalisme",
+      "institution": "Université de Montréal",
+      "details": [
+        "Méthodes journalistiques",
+        "Presse radio",
+        "Presse télévisée",
+        "Journalisme et internet"
+      ]
+    },
+    {
+      "year": 1999,
+      "title": "DEUG Mathématiques, Informatique Appliquées aux Sciences",
+      "institution": "Université Grenoble 1",
+      "details": []
+    }
+  ],
+  "project": [
+    {
+      "name": "Evento",
+      "subtitle": "Application web de gestion d'évènements",
+      "year": 2025,
+      "description": "Conception et développement d'une application web en formation chez Isika. Technologies utilisées : UML, C# (framework Asp.net), HTML, CSS, Bootsprap. Développement en mode Agile. Versioning sous git.",
+      "link": "https://github.com/Yome07/Evento"
+    },
+    {
+      "name": "Géoloc Photos",
+      "subtitle": "Application web de publication de photos",
+      "year": 2022,
+      "description": "Conception et développement de l'application en formation à l'Afpa. Technologies utilisées : UML, Java, HTML, CSS, Javascript, bibliothèque JS Leaflet",
+      "link": "https://github.com/Yome07/geolocPhotos/"
+    },
+    {
+      "name": "OpenEdition Search",
+      "subtitle": "Moteur de recherche de la plateforme openedition.org",
+      "year": "2017 - 2018",
+      "description": "chargé de projet de la refonte du site, réalisation du cahier des charges et des wireframes. Site en React JS réalisé par un prestataire.",
+      "link": "https://search.openedition.org"
+    },
+    {
+      "name": "Transit Librairie",
+      "year": "2014",
+      "description": "Site réalisé sous CMS Wordpress, création du thème.",
+      "link": "https://web.archive.org/web/20141218095606/http://transit-librairie.org/"
+    },
+    {
+      "name": "Les promenades sonores",
+      "subtitle": "un site de Radio Grenouille",
+      "year": "2014",
+      "description": "Intégration de la page d'accueil à partir d'une maquette Photoshop. HTML5 - CSS3 - Javascript / Jquery - Site responsive",
+      "link": "https://web.archive.org/web/20140528101625/http://www.promenades-sonores.com/"
+    },
+    {
+      "name": "Radiolab",
+      "subtitle": "un site de Radio Grenouille",
+      "year": "2014",
+      "description": "Développement d'une rubrique de ce site sous le CMS Wordpress - Php.",
+      "link": "https://web.archive.org/web/20141003183011/http://radiolab.fr/"
+    },
+    {
+      "name": "Ancrages",
+      "year": "2014 - 2016",
+      "description": "Mises à jour du site, du CMS Wordpress, du template, des plugins. Modification des feuilles de style.",
+      "link": "https://web.archive.org/web/20160610155021/http://ancrages.org/"
+    },
+    {
+      "name": "ALJEPA",
+      "subtitle": "Foyer de jeunes travailleurs d'Aix-en-Provence",
+      "year": "2013",
+      "description": "Site réalisé sous le CMS Joomla à partir d'un template",
+      "link": "https://web.archive.org/web/20130518153751/http://www.aljepa.fr/"
+    },
+    {
+      "name": "Le cylindre sonore",
+      "subtitle": "Une œuvre de Bernhard Leitner",
+      "year": "2007",
+      "description": "Site réalisé en Flash lors de la Licence professionnelle.",
+      "link": "https://github.com/Yome07/le_cylindre_sonore"
+    },
+    {
+      "name": "Land and Freedom",
+      "subtitle": "Un film de Ken Loach",
+      "year": "2007",
+      "description": "Site réalisé lors de la Licence professionnelle. HTML - CSS",
+      "link": "https://github.com/Yome07/land_and_freedom"
+    }
+  ],
+  "terms_of_use": {
+    "title": "Mentions légales",
+    "content": "L'ensemble de ce site relève des législations française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents iconographiques et photographiques.",
+    "hosting_title": "Hébergeur",
+    "hosting_content": "Site hébergé chez www.ovh.com OVH - SAS au capital de 10 000 000 € RCS Roubaix - Tourcoing 424 761 419 00011 - Code APE 6202A - N° TVA : FR 22-424-761-419-00011 Siège social : 2 rue Kellerman, 59100 Roubaix - France",
+    "editor_title": "Éditeur du site",
+    "editor_content": "Guillaume Amselle Andreux<br/>8 rue des lilas<br/>75019 Paris"
+  }
+}
