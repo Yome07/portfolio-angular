@@ -2,3 +2,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+// Smooth scrolling pour les liens d'ancrage
+html {
+  scroll-behavior: smooth;
+}
+
+// Style pour les sections
+section {
+  min-height: 100vh;
+  padding: 2rem;
+
+  // Ajuste le padding top pour compenser le bouton hamburger sur mobile (en dessous de md)
+  @media (max-width: 767px) {
+    padding-top: 4rem;
+  }
+}
+
+// Animation pour le bouton hamburger
+button {
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Styles pour le layout responsive
+.flex {
+  @media (min-width: 768px) {
+    // Desktop: layout flex normal avec sidebar fixe
+    aside {
+      flex-shrink: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    // Mobile: contenu principal prend toute la largeur
+    main {
+      width: 100%;
+    }
+  }
+}
+
+// Overlay responsive
+.overlay {
+  backdrop-filter: blur(2px);
+}
