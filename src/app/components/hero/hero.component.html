@@ -1,1 +1,37 @@
-<p>hero works!</p>
+<!-- src/app/components/hero/hero.component.html -->
+<section
+  class="hero-section flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-900 to-purple-900 text-white"
+>
+  <div class="text-center max-w-4xl px-6">
+    <!-- Nom principal -->
+    <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">
+      Guillaume Amselle Andreux
+    </h1>
+
+    <!-- Titre/Profession -->
+    <h2
+      class="text-2xl md:text-3xl font-light mb-6 text-blue-200 animate-slide-up"
+    >
+      Je suis Développeur Full Stack
+    </h2>
+
+    <!-- Description -->
+    <p
+      class="text-lg md:text-xl leading-relaxed mb-8 text-gray-300 max-w-2xl mx-auto animate-slide-up-delay"
+    >
+      Passionné par le développement web moderne, je crée des applications
+      innovantes et performantes avec Angular, React et Node.js. Mon objectif
+      est de transformer vos idées en solutions digitales élégantes et
+      fonctionnelles.
+    </p>
+
+    <!-- Bouton CV -->
+    <button
+      (click)="downloadCV()"
+      class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate-bounce-in"
+    >
+      <i class="fas fa-download mr-2"></i>
+      Télécharger mon CV
+    </button>
+  </div>
+</section>
