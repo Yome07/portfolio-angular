@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
+import { inject, Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import {
   Contact,
   Education,
@@ -9,17 +9,17 @@ import {
   Profile,
   Project,
   Skill,
-  SocialLink, TermsOfUse
+  SocialLink,
+  TermsOfUse,
 } from '../models/portfoilio.interface';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DataService {
-
   private apiUrl = 'http://localhost:3000';
 
-  constructor(private http: HttpClient) { }
+  private http = inject(HttpClient);
 
   getProfile(): Observable<Profile> {
     return this.http.get<Profile>(`${this.apiUrl}/profile`);
@@ -29,8 +29,8 @@ export class DataService {
     return this.http.get<Contact>(`${this.apiUrl}/contact`);
   }
 
-  getSocialLinks(): Observable<SocialLink> {
-    return this.http.get<SocialLink>(`${this.apiUrl}/social-links`);
+  getSocialList(): Observable<SocialLink[]> {
+    return this.http.get<SocialLink[]>(`${this.apiUrl}/social`);
   }
 
   getSkills(): Observable<Skill> {
@@ -55,5 +55,4 @@ export class DataService {
   getTermsOfUse(): Observable<TermsOfUse> {
     return this.http.get<TermsOfUse>(`${this.apiUrl}/terms-of-use`);
   }
-
 }

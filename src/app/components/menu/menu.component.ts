@@ -1,5 +1,7 @@
-import { Component, EventEmitter, Output, Input } from '@angular/core';
+import { Component, EventEmitter, Output, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DataService } from '../../services/data.service';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-menu',
@@ -8,6 +10,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './menu.component.scss',
 })
 export class MenuComponent {
+  readonly dataService = inject(DataService);
+  readonly socialLinks = toSignal(this.dataService.getSocialList());
+
   @Input() isOpen = false;
   @Output() closeMenu = new EventEmitter<void>();
 

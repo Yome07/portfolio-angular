@@ -15,6 +15,7 @@ export interface Contact {
 export interface SocialLink {
   name: string;
   url: string;
+  icon: string; // Nom de l'icône, par exemple 'github', 'linkedin', etc.
 }
 
 // Interface pour les compétences globales
@@ -86,7 +87,15 @@ export type ExperienceRole = string;
 export type CompanyName = string;
 export type Location = string;
 export type DateString = string;
-export type LanguageLevel = 'natif' | 'C2' | 'C1' | 'B2' | 'B1' | 'A2' | 'A1' | 'notions';
+export type LanguageLevel =
+  | 'natif'
+  | 'C2'
+  | 'C1'
+  | 'B2'
+  | 'B1'
+  | 'A2'
+  | 'A1'
+  | 'notions';
 export type SkillLevel = 'débutant' | 'intermédiaire' | 'avancé' | 'expert';
 
 // Interface optionnelle pour des métadonnées supplémentaires
