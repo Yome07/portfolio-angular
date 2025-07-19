@@ -1,1 +1,80 @@
-<p>footer works!</p>
+<footer>
+  <div class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>
+        @if (profile(); as profile) {
+          <span>{{ profile.name }} </span>
+        }
+        | &copy; 2025 | Tous droits réservés |
+        @if (termsOfUse(); as termsOfUse) {
+          <button
+            (click)="openTermsModal()"
+            class="text-blue-400 hover:underline"
+          >
+            {{ termsOfUse.title }}
+          </button>
+        }
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Modale des conditions d'utilisation -->
+@if (termsOfUse(); as termsOfUse) {
+  @if (isTermsModalOpen; as isTermsModalOpen) {
+    <div
+      class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+    >
+      <div class="bg-white rounded-lg shadow-lg max-w-md w-full mx-4">
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-semibold text-gray-900">
+              {{ termsOfUse.title }}
+            </h2>
+            <button
+              (click)="closeTermsModal()"
+              class="text-gray-400 hover:text-gray-600"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="text-gray-700">
+            <p>{{ termsOfUse.content }}</p>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900">
+            {{ termsOfUse.hosting_title }}
+          </h3>
+          <div class="text-gray-700">
+            <p>{{ termsOfUse.hosting_content }}</p>
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900">
+            {{ termsOfUse.editor_title }}
+          </h3>
+          <div class="text-gray-700">
+            <p [innerHTML]="termsOfUse.editor_content"></p>
+          </div>
+          <div class="mt-6 flex justify-end">
+            <button
+              (click)="closeTermsModal()"
+              class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
+            >
+              Fermer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
+}

@@ -5,10 +5,6 @@
     "bio": "Après plus de 10 ans en tant que webmaster et chargé de projets web, je me suis spécialisé en développement web full‑stack. Actuellement en CDA - formation d'architecte logiciel, j'allie gestion de sites web et conception UX/UI pour créer des projets à fort impact. Je souhaite intégrer une entreprise valorisant l'humain et l'innovation.",
     "cv": "CV_developpeur_fullstack_Guillaume_Amselle_Andreux.pdf"
   },
-  "contact": {
-    "email": "guillaume@andreux.fr",
-    "phone": "0675026732"
-  },
   "social": [
     {
       "name": "email",
@@ -281,12 +277,12 @@
       "link": "https://github.com/Yome07/land_and_freedom"
     }
   ],
-  "terms_of_use": {
+  "terms-of-use": {
     "title": "Mentions légales",
     "content": "L'ensemble de ce site relève des législations française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents iconographiques et photographiques.",
     "hosting_title": "Hébergeur",
-    "hosting_content": "Site hébergé chez www.ovh.com OVH - SAS au capital de 10 000 000 € RCS Roubaix - Tourcoing 424 761 419 00011 - Code APE 6202A - N° TVA : FR 22-424-761-419-00011 Siège social : 2 rue Kellerman, 59100 Roubaix - France",
+    "hosting_content": "Site hébergé chez www.ovh.com OVH - Siège social : 2 rue Kellerman, 59100 Roubaix - France",
     "editor_title": "Éditeur du site",
-    "editor_content": "Guillaume Amselle Andreux<br/>8 rue des lilas<br/>75019 Paris"
+    "editor_content": "Guillaume Amselle Andreux<br/>75019 Paris"
   }
 }
