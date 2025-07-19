@@ -3,6 +3,7 @@ export interface Profile {
   name: string;
   title: string;
   bio: string;
+  cv: string;
 }
 
 // Interface pour les informations de contact
