@@ -60,7 +60,7 @@
     { "name": "allemand", "level": "notions" },
     { "name": "espagnol", "level": "notions" }
   ],
-  "experience": [
+  "experiences": [
     {
       "role": "Webmaster développeur",
       "company": "La Vie Ouvrière",

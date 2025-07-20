@@ -35,8 +35,8 @@ export class DataService {
   getLanguages(): Observable<Language> {
     return this.http.get<Language>(`${this.apiUrl}/languages`);
   }
-  getExperiences(): Observable<Experience> {
-    return this.http.get<Experience>(`${this.apiUrl}/experiences`);
+  getExperiencesList(): Observable<Experience[]> {
+    return this.http.get<Experience[]>(`${this.apiUrl}/experiences`);
   }
 
   getEducations(): Observable<Education> {

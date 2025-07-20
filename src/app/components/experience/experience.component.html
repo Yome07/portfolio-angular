@@ -1,1 +1,51 @@
-<p>experience works!</p>
+<div class="experience-container">
+  <div class="timeline">
+    @for (experience of experiences(); track experience.start) {
+      <div class="timeline-item" [class.fade-in]="true">
+        <!-- Timeline dates -->
+        <div class="timeline-dates">
+          <div class="timeline-date start-date capitalize-first">
+            {{ experience.start | date: 'MMMM yyyy' }}
+          </div>
+          <div class="timeline-line"></div>
+          <div class="timeline-date end-date capitalize-first">
+            {{
+              experience.end ? (experience.end | date: 'MMMM yyyy') : 'Présent'
+            }}
+          </div>
+        </div>
+
+        <!-- Experience card -->
+        <div class="experience-card">
+          <!-- En-tête de la carte -->
+          <div class="card-header">
+            <div class="card-subtitle">
+              {{ experience.company }} | {{ experience.location }}
+            </div>
+            <h3 class="card-title">{{ experience.role }}</h3>
+          </div>
+
+          <!-- Liste des tâches -->
+          <div class="card-content">
+            <ul class="tasks-list">
+              @for (task of experience.tasks; track task) {
+                <li class="task-item">{{ task }}</li>
+              }
+            </ul>
+          </div>
+
+          <!-- Badges des compétences -->
+          @if (experience.skills && experience.skills.length > 0) {
+            <div class="card-footer">
+              <div class="skills-badges">
+                @for (skill of experience.skills; track skill) {
+                  <span class="skill-badge">{{ skill }}</span>
+                }
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>

@@ -39,8 +39,9 @@ export interface Experience {
   company: string;
   location: string;
   start: string;
-  end: string;
+  end?: string;
   tasks: string[];
+  skills?: string[]; // Liste de tags pour les compétences utilisées
 }
 
 // Interface pour une formation
