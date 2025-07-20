@@ -1,12 +1,95 @@
-<p>cv works!</p>
-<section id="skills">
-  <app-skills></app-skills>
-</section>
+<section id="cv" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Titre de la section -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Mon CV</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Découvrez mon parcours professionnel, mes compétences et ma formation
+      </p>
+    </div>
 
-<section id="experience">
-  <app-experience></app-experience>
-</section>
+    <!-- Navigation du CV -->
+    <div class="mb-8">
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <!-- Menu de navigation -->
+        <nav class="flex bg-gray-100 rounded-lg p-1">
+          <button
+            (click)="selectSection('skills')"
+            [class]="
+              isSectionActive('skills')
+                ? 'bg-white text-blue-600 shadow-sm'
+                : 'text-gray-600 hover:text-gray-900'
+            "
+            class="px-4 py-2 rounded-md font-medium transition-all duration-200 text-sm sm:text-base"
+          >
+            Compétences
+          </button>
+          <button
+            (click)="selectSection('experience')"
+            [class]="
+              isSectionActive('experience')
+                ? 'bg-white text-blue-600 shadow-sm'
+                : 'text-gray-600 hover:text-gray-900'
+            "
+            class="px-4 py-2 rounded-md font-medium transition-all duration-200 text-sm sm:text-base"
+          >
+            Expériences pro
+          </button>
+          <button
+            (click)="selectSection('education')"
+            [class]="
+              isSectionActive('education')
+                ? 'bg-white text-blue-600 shadow-sm'
+                : 'text-gray-600 hover:text-gray-900'
+            "
+            class="px-4 py-2 rounded-md font-medium transition-all duration-200 text-sm sm:text-base"
+          >
+            Formations
+          </button>
+        </nav>
 
-<section id="education">
-  <app-education></app-education>
+        <!-- Bouton téléchargement PDF -->
+        <button
+          (click)="downloadCV()"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+            />
+          </svg>
+          Télécharger CV PDF
+        </button>
+      </div>
+    </div>
+
+    <!-- Contenu des sections -->
+    <div class="cv-content">
+      @if (activeSection() === 'skills') {
+        <div class="fade-in">
+          <app-skills></app-skills>
+        </div>
+      }
+
+      @if (activeSection() === 'experience') {
+        <div class="fade-in">
+          <app-experience></app-experience>
+        </div>
+      }
+
+      @if (activeSection() === 'education') {
+        <div class="fade-in">
+          <app-education></app-education>
+        </div>
+      }
+    </div>
+  </div>
 </section>

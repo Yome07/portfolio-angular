@@ -71,7 +71,8 @@
         "Webmaster du site de la revue La Vie Ouvrière, nvo.fr.",
         "Remettre en état le site, maintenir le CMS Wordpres et les plugins, et améliorer l'expérience utilisateur. Restauré les fonctionnalités défaillantes, mis à jour WordPress et les plugins, et modifié le thème pour optimiser l'UX.",
         "Site pleinement fonctionnel, améliorations UX visibles, et meilleure navigation pour les utilisateurs."
-      ]
+      ],
+      "skills": ["WordPress", "PHP", "HTML", "CSS"]
     },
     {
       "role": "Chargé de projets web",
@@ -84,6 +85,14 @@
         "Assurer la mise en place des sites des nouvelles revues et contribuer aux refontes UX/UI des plateformes.",
         "Participation au projet de refonte du moteur de recherche search.openedition.org et corrections de templates PHP pour les sites de revues.",
         "Amélioration de l'expérience utilisateur des interfaces et mise en ligne efficace par la création d'une maquette générique pour toutes les nouvelles revues."
+      ],
+      "skills": [
+        "HTML",
+        "CSS",
+        "PHP",
+        "Wireframes",
+        "Cahier des charges",
+        "Git"
       ]
     },
     {
@@ -97,7 +106,8 @@
         "Assurer la maintenance et l'ajout de contenu.",
         "Mise en place d'une newsletter et gestion d'une crise après un piratage, incluant la restauration du site et le renforcement de la sécurité.",
         "Mise en place de la Newsletter réussie et continuité de service restaurée après le piratage."
-      ]
+      ],
+      "skills": ["WordPress", "HTML", "CSS", "PHP"]
     },
     {
       "role": "Webmaster - Développeur",
@@ -109,7 +119,8 @@
         "Chargé de concevoir un site web avec un CMS.",
         "Élaboration des wireframes et maquettes, installation de WordPress, création d'un thème sur mesure, suivi de la mise en ligne et formation de l'équipe.",
         "Site opérationnel et autonome pour la librairie."
-      ]
+      ],
+      "skills": ["WordPress", "HTML", "CSS", "PHP", "Wireframes"]
     },
     {
       "role": "Webmaster intégrateur stagiaire",
@@ -120,7 +131,8 @@
       "tasks": [
         "Intégration de la page d'accueil d'un site web",
         "Développement d'une rubrique en PHP"
-      ]
+      ],
+      "skills": ["HTML", "CSS", "PHP"]
     },
     {
       "role": "Formateur informatique",
@@ -141,7 +153,8 @@
       "tasks": [
         "Multimédia : Refonte du site web sous CMS Joomla, Création de documents de communication, Rédaction et publication du journal interne",
         "Animation : Gestion de la salle multimédia, Aide à l'utilisation du matériel informatique, aide à la création de CV, participation à la vie du foyer"
-      ]
+      ],
+      "skills": ["Joomla", "HTML", "CSS", "PHP"]
     },
     {
       "role": "Assistant pédagogique en informatique",
