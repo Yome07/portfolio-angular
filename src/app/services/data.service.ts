@@ -39,8 +39,8 @@ export class DataService {
     return this.http.get<Experience[]>(`${this.apiUrl}/experiences`);
   }
 
-  getEducations(): Observable<Education> {
-    return this.http.get<Education>(`${this.apiUrl}/educations`);
+  getTrainingsList(): Observable<Education[]> {
+    return this.http.get<Education[]>(`${this.apiUrl}/trainings`);
   }
 
   getProjectsList(): Observable<Project[]> {

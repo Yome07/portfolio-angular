@@ -1,1 +1,21 @@
-<p>education works!</p>
+<section class="trainings">
+  <h2>Formations</h2>
+  <div class="trainings-container">
+    @for (training of trainings(); track training.year) {
+      <div class="training-item">
+        <div class="training-year">{{ training.year }}</div>
+        <div class="training-card">
+          <h4 class="training-institution">{{ training.institution }}</h4>
+          <h3 class="training-title">{{ training.title }}</h3>
+          @if (training.details.length > 0) {
+            <ul class="training-details">
+              @for (detail of training.details; track detail) {
+                <li>{{ detail }}</li>
+              }
+            </ul>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>
