@@ -1,0 +1,86 @@
+// Animations personnalisées
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Styles pour les cartes de projet
+.project-card {
+  animation: slideUp 0.6s ease-out;
+
+  &:hover {
+    .project-image img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.project-image {
+  img {
+    transition: transform 0.3s ease;
+  }
+}
+
+// Styles pour les badges de technologies
+.tech-badge {
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+  }
+}
+
+// Animation pour les boutons
+.project-button {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transition: left 0.5s;
+  }
+
+  &:hover::before {
+    left: 100%;
+  }
+}
+
+// Responsive pour mobile
+@media (max-width: 768px) {
+  .project-card {
+    .project-content {
+      padding: 1.5rem;
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+    }
+
+    .tech-badges {
+      gap: 0.5rem;
+    }
+  }
+}
+
+// Gradient pour les placeholders
+.gradient-placeholder {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}

@@ -209,72 +209,109 @@
   ],
   "project": [
     {
-      "name": "Evento",
+      "title": "Evento",
       "subtitle": "Application web de gestion d'évènements",
       "year": 2025,
       "description": "Conception et développement d'une application web en formation chez Isika. Technologies utilisées : UML, C# (framework Asp.net), HTML, CSS, Bootsprap. Développement en mode Agile. Versioning sous git.",
-      "link": "https://github.com/Yome07/Evento"
+      "link": "https://github.com/Yome07/Evento",
+      "technologies": [
+        "UML",
+        "C#",
+        "Asp.net",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Git"
+      ],
+      "imagePath": "assets/images/projets/evento.png"
     },
     {
-      "name": "Géoloc Photos",
+      "title": "Géoloc Photos",
       "subtitle": "Application web de publication de photos",
       "year": 2022,
       "description": "Conception et développement de l'application en formation à l'Afpa. Technologies utilisées : UML, Java, HTML, CSS, Javascript, bibliothèque JS Leaflet",
-      "link": "https://github.com/Yome07/geolocPhotos/"
+      "link": "https://github.com/Yome07/geolocPhotos/",
+      "technologies": [
+        "UML",
+        "Java",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Leaflet",
+        "Springboot"
+      ],
+      "imagePath": "assets/images/projets/geoloc-photos.png"
     },
     {
-      "name": "OpenEdition Search",
+      "title": "OpenEdition Search",
       "subtitle": "Moteur de recherche de la plateforme openedition.org",
       "year": "2017 - 2018",
-      "description": "chargé de projet de la refonte du site, réalisation du cahier des charges et des wireframes. Site en React JS réalisé par un prestataire.",
-      "link": "https://search.openedition.org"
+      "description": "chargé de projet de la refonte du site, réalisation du cahier des charges et des wireframes. Site en React JS réalisé par un prestataire externe.",
+      "link": "https://search.openedition.org",
+      "technologies": ["Wireframes", "Cahier des charges"],
+      "imagePath": "assets/images/projets/openedition-search.png"
     },
     {
-      "name": "Transit Librairie",
+      "title": "Transit Librairie",
       "year": "2014",
       "description": "Site réalisé sous CMS Wordpress, création du thème.",
-      "link": "https://web.archive.org/web/20141218095606/http://transit-librairie.org/"
+      "link": "https://web.archive.org/web/20141218095606/http://transit-librairie.org/",
+      "technologies": ["WordPress", "HTML", "CSS", "PHP"],
+      "imagePath": "assets/images/projets/transit-librairie.png"
     },
     {
-      "name": "Les promenades sonores",
+      "title": "Les promenades sonores",
       "subtitle": "un site de Radio Grenouille",
       "year": "2014",
       "description": "Intégration de la page d'accueil à partir d'une maquette Photoshop. HTML5 - CSS3 - Javascript / Jquery - Site responsive",
-      "link": "https://web.archive.org/web/20140528101625/http://www.promenades-sonores.com/"
+      "link": "https://web.archive.org/web/20140528101625/http://www.promenades-sonores.com/",
+      "technologies": ["HTML5", "CSS3", "Javascript", "Jquery"],
+      "imagePath": "assets/images/projets/promenades-sonores.png"
     },
     {
-      "name": "Radiolab",
+      "title": "Radiolab",
       "subtitle": "un site de Radio Grenouille",
       "year": "2014",
       "description": "Développement d'une rubrique de ce site sous le CMS Wordpress - Php.",
-      "link": "https://web.archive.org/web/20141003183011/http://radiolab.fr/"
+      "link": "https://web.archive.org/web/20141003183011/http://radiolab.fr/",
+      "technologies": ["WordPress", "PHP", "HTML", "CSS"],
+      "imagePath": "assets/images/projets/radiolab.png"
     },
     {
-      "name": "Ancrages",
+      "title": "Ancrages",
+      "subtitle": "Centre de ressources dédié à l'histoire et aux mémoires des migrations en Provence-Alpes Côte d’Azur",
       "year": "2014 - 2016",
       "description": "Mises à jour du site, du CMS Wordpress, du template, des plugins. Modification des feuilles de style.",
-      "link": "https://web.archive.org/web/20160610155021/http://ancrages.org/"
+      "link": "https://web.archive.org/web/20160610155021/http://ancrages.org/",
+      "technologies": ["WordPress", "HTML", "CSS", "PHP"],
+      "imagePath": "assets/images/projets/ancrages.png"
     },
     {
-      "name": "ALJEPA",
+      "title": "ALJEPA",
       "subtitle": "Foyer de jeunes travailleurs d'Aix-en-Provence",
       "year": "2013",
       "description": "Site réalisé sous le CMS Joomla à partir d'un template",
-      "link": "https://web.archive.org/web/20130518153751/http://www.aljepa.fr/"
+      "link": "https://web.archive.org/web/20130518153751/http://www.aljepa.fr/",
+      "technologies": ["Joomla", "HTML", "CSS", "PHP"],
+      "imagePath": "assets/images/projets/aljepa.png"
     },
     {
-      "name": "Le cylindre sonore",
+      "title": "Le cylindre sonore",
       "subtitle": "Une œuvre de Bernhard Leitner",
       "year": "2007",
       "description": "Site réalisé en Flash lors de la Licence professionnelle.",
-      "link": "https://github.com/Yome07/le_cylindre_sonore"
+      "link": "https://github.com/Yome07/le_cylindre_sonore",
+      "technologies": ["Flash", "ActionScript"],
+      "imagePath": "assets/images/projets/le_cylindre_sonore.png"
     },
     {
-      "name": "Land and Freedom",
+      "title": "Land and Freedom",
       "subtitle": "Un film de Ken Loach",
       "year": "2007",
       "description": "Site réalisé lors de la Licence professionnelle. HTML - CSS",
-      "link": "https://github.com/Yome07/land_and_freedom"
+      "link": "https://github.com/Yome07/land_and_freedom",
+      "technologies": ["HTML", "CSS"],
+      "imagePath": "assets/images/projets/land_and_freedom.png"
     }
   ],
   "terms-of-use": {

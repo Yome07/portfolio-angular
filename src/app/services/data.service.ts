@@ -25,10 +25,6 @@ export class DataService {
     return this.http.get<Profile>(`${this.apiUrl}/profile`);
   }
 
-  getContact(): Observable<Contact> {
-    return this.http.get<Contact>(`${this.apiUrl}/contact`);
-  }
-
   getSocialList(): Observable<SocialLink[]> {
     return this.http.get<SocialLink[]>(`${this.apiUrl}/social`);
   }
@@ -48,8 +44,8 @@ export class DataService {
     return this.http.get<Education>(`${this.apiUrl}/educations`);
   }
 
-  getProjects(): Observable<Project> {
-    return this.http.get<Project>(`${this.apiUrl}/projects`);
+  getProjectsList(): Observable<Project[]> {
+    return this.http.get<Project[]>(`${this.apiUrl}/project`);
   }
 
   getTermsOfUse(): Observable<TermsOfUse> {

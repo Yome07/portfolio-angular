@@ -53,11 +53,13 @@ export interface Education {
 
 // Interface pour un projet
 export interface Project {
-  name: string;
+  title: string;
   subtitle?: string;
   year: string | number;
   description: string;
   link: string;
+  technologies: string[]; // Liste de tags pour le projet
+  imagePath?: string; // URL de l'image du projet
 }
 
 // Interface pour les mentions légales
