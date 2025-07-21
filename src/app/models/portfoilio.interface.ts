@@ -21,10 +21,10 @@ export interface SocialLink {
 
 // Interface pour les compétences globales
 export interface Skill {
-  technic: string[];
-  tool: string[];
-  project_management: string[];
-  soft_skill: string[];
+  title: string;
+  subtitle: string;
+  icon: string; // Chemin vers l'icône des compétences
+  items: string[]; // Liste de compétences
 }
 
 // Interface pour les langues
@@ -78,7 +78,7 @@ export interface CV {
   profile: Profile;
   contact: Contact;
   social: SocialLink[];
-  skills: Skill;
+  skills: Skill[];
   langues: Language[];
   experience: Experience[];
   education: Education[];
@@ -86,7 +86,7 @@ export interface CV {
   terms_of_use: TermsOfUse;
 }
 
-// Types utilitaires pour une meilleure typage
+// Types utilitaires pour un meilleur typage
 export type ExperienceRole = string;
 export type CompanyName = string;
 export type Location = string;

@@ -28,12 +28,12 @@ export class DataService {
     return this.http.get<SocialLink[]>(`${this.apiUrl}/social`);
   }
 
-  getSkills(): Observable<Skill> {
-    return this.http.get<Skill>(`${this.apiUrl}/skills`);
+  getSkillsList(): Observable<Skill[]> {
+    return this.http.get<Skill[]>(`${this.apiUrl}/skills`);
   }
 
-  getLanguages(): Observable<Language> {
-    return this.http.get<Language>(`${this.apiUrl}/languages`);
+  getLanguagesList(): Observable<Language[]> {
+    return this.http.get<Language[]>(`${this.apiUrl}/languages`);
   }
   getExperiencesList(): Observable<Experience[]> {
     return this.http.get<Experience[]>(`${this.apiUrl}/experiences`);
