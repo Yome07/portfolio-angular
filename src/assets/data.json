@@ -261,7 +261,8 @@
         "CSS",
         "Bootstrap",
         "Git"
-      ]
+      ],
+      "imagePath": "images/evento.png"
     },
     {
       "title": "Géoloc Photos",
