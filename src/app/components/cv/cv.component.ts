@@ -27,11 +27,10 @@ export class CvComponent {
 
   // Méthode pour télécharger le CV PDF
   downloadCV(): void {
-    const cvUrl =
-      'assets/CV_developpeur_fullstack_Guillaume_Amselle_Andreux.pdf';
+    const cvUrl = 'CV_developpeur_fullstack_Guillaume_Amselle_Andreux.pdf';
     const link = document.createElement('a');
     link.href = cvUrl;
-    link.download = 'CV_Guillaume_Amselle_Andreux.pdf';
+    link.download = 'CV_developpeur_fullstack_Guillaume_Amselle_Andreux.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
     link.click();

@@ -16,7 +16,7 @@ export class HeroComponent {
     // Logique pour télécharger le CV
     const link = document.createElement('a');
     const cvPath = this.profile()?.cv
-      ? `./src/assets/${this.profile()!.cv}`
+      ? `${this.profile()!.cv}`
       : './src/assets/test.pdf';
     window.open(cvPath, '_blank');
     link.click();
