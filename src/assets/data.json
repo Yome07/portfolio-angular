@@ -261,8 +261,7 @@
         "CSS",
         "Bootstrap",
         "Git"
-      ],
-      "imagePath": "assets/images/projets/evento.png"
+      ]
     },
     {
       "title": "Géoloc Photos",
@@ -279,7 +278,7 @@
         "Leaflet",
         "Springboot"
       ],
-      "imagePath": "assets/images/projets/geoloc-photos.png"
+      "imagePath": "images/geolocPhotos.png"
     },
     {
       "title": "OpenEdition Search",
@@ -288,7 +287,7 @@
       "description": "chargé de projet de la refonte du site, réalisation du cahier des charges et des wireframes. Site en React JS réalisé par un prestataire externe.",
       "link": "https://search.openedition.org",
       "technologies": ["Wireframes", "Cahier des charges"],
-      "imagePath": "assets/images/projets/openedition-search.png"
+      "imagePath": "images/OpenEditionSearch.png"
     },
     {
       "title": "Transit Librairie",
@@ -296,7 +295,7 @@
       "description": "Site réalisé sous CMS Wordpress, création du thème.",
       "link": "https://web.archive.org/web/20141218095606/http://transit-librairie.org/",
       "technologies": ["WordPress", "HTML", "CSS", "PHP"],
-      "imagePath": "assets/images/projets/transit-librairie.png"
+      "imagePath": "images/transit.jpg"
     },
     {
       "title": "Les promenades sonores",
@@ -305,7 +304,7 @@
       "description": "Intégration de la page d'accueil à partir d'une maquette Photoshop. HTML5 - CSS3 - Javascript / Jquery - Site responsive",
       "link": "https://web.archive.org/web/20140528101625/http://www.promenades-sonores.com/",
       "technologies": ["HTML5", "CSS3", "Javascript", "Jquery"],
-      "imagePath": "assets/images/projets/promenades-sonores.png"
+      "imagePath": "images/promenades.png"
     },
     {
       "title": "Radiolab",
@@ -314,7 +313,7 @@
       "description": "Développement d'une rubrique de ce site sous le CMS Wordpress - Php.",
       "link": "https://web.archive.org/web/20141003183011/http://radiolab.fr/",
       "technologies": ["WordPress", "PHP", "HTML", "CSS"],
-      "imagePath": "assets/images/projets/radiolab.png"
+      "imagePath": "images/radiolab.png"
     },
     {
       "title": "Ancrages",
@@ -323,7 +322,7 @@
       "description": "Mises à jour du site, du CMS Wordpress, du template, des plugins. Modification des feuilles de style.",
       "link": "https://web.archive.org/web/20160610155021/http://ancrages.org/",
       "technologies": ["WordPress", "HTML", "CSS", "PHP"],
-      "imagePath": "assets/images/projets/ancrages.png"
+      "imagePath": "images/ancrages300x200.png"
     },
     {
       "title": "ALJEPA",
@@ -332,7 +331,7 @@
       "description": "Site réalisé sous le CMS Joomla à partir d'un template",
       "link": "https://web.archive.org/web/20130518153751/http://www.aljepa.fr/",
       "technologies": ["Joomla", "HTML", "CSS", "PHP"],
-      "imagePath": "assets/images/projets/aljepa.png"
+      "imagePath": "images/aljepa.png"
     },
     {
       "title": "Le cylindre sonore",
@@ -341,7 +340,7 @@
       "description": "Site réalisé en Flash lors de la Licence professionnelle.",
       "link": "https://github.com/Yome07/le_cylindre_sonore",
       "technologies": ["Flash", "ActionScript"],
-      "imagePath": "assets/images/projets/le_cylindre_sonore.png"
+      "imagePath": "images/cylindre_sonore.png"
     },
     {
       "title": "Land and Freedom",
@@ -350,7 +349,7 @@
       "description": "Site réalisé lors de la Licence professionnelle. HTML - CSS",
       "link": "https://github.com/Yome07/land_and_freedom",
       "technologies": ["HTML", "CSS"],
-      "imagePath": "assets/images/projets/land_and_freedom.png"
+      "imagePath": "images/land_and_freedom.png"
     }
   ],
   "terms-of-use": {

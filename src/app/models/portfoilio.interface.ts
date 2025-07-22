@@ -25,7 +25,7 @@ export interface SocialLink {
 export interface Skill {
   title: string;
   subtitle: string;
-  icon: string; // Chemin vers l'icône des compétences
+  icon: string; // svg de l'icône des compétences
   items: string[]; // Liste de compétences
 }
 
