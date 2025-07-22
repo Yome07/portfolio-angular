@@ -1,6 +1,7 @@
 // Interface principale pour le profil
 export interface Profile {
-  name: string;
+  firstname: string;
+  lastname: string;
   title: string;
   bio: string;
   cv: string;

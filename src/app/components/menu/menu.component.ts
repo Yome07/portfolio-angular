@@ -12,6 +12,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 export class MenuComponent {
   readonly dataService = inject(DataService);
   readonly socialLinks = toSignal(this.dataService.getSocialList());
+  readonly profile = toSignal(this.dataService.getProfile());
 
   @Input() isOpen = false;
   @Output() closeMenu = new EventEmitter<void>();

@@ -2,13 +2,25 @@
   <h2>Compétences</h2>
   <div class="skills-container">
     @for (skill of skills(); track skill.title) {
-      <div class="skill-card">
-        <div class="skill-content">
-          <h4 class="skill-subtitle">{{ skill.subtitle }}</h4>
-          <h3 class="skill-title">{{ skill.title }}</h3>
-          <ul class="skill-items">
+      <div
+        class="bg-cyan-950 rounded shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-t-8 border-cyan-800 p-6"
+      >
+        <div class="skill-content pr-12">
+          <h4
+            class="skill-subtitle text-emerald-300 text-sm font-medium mb-2 uppercase tracking-wide"
+          >
+            {{ skill.subtitle }}
+          </h4>
+          <h3 class="skill-title text-xl font-semibold mb-4">
+            {{ skill.title }}
+          </h3>
+          <ul class="flex flex-wrap gap-2 mb-4">
             @for (item of skill.items; track item) {
-              <li>{{ item }}</li>
+              <li
+                class="px-3 py-1 bg-emerald-300 text-cyan-900 text-sm font-medium rounded mb-2 mr-2"
+              >
+                {{ item }}
+              </li>
             }
           </ul>
         </div>
@@ -19,14 +31,30 @@
     }
 
     <!-- Card des langues -->
-    <div class="language-card">
-      <div class="language-content">
-        <h3 class="language-title">Langues</h3>
+    <div
+      class="language-card bg-cyan-950 rounded shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-t-8 border-cyan-800 p-6"
+    >
+      <div class="language-content pr-12">
+        <h3 class="language-title text-xl font-semibold mb-4">Langues</h3>
         <ul class="language-items">
-          @for (language of languages(); track language.name) {
-            <li>
-              <span class="language-name">{{ language.name }}</span>
-              <span class="language-level">{{ language.level }}</span>
+          @for (
+            language of languages();
+            track language.name;
+            let isLast = $last
+          ) {
+            <li
+              [ngClass]="{
+                'flex justify-between items-center py-2 border-b border-gray-50': true,
+                'mb-2': !isLast,
+                'mb-0 border-b-0': isLast,
+              }"
+            >
+              <span class="text-emerald-300 capitalize font-medium">{{
+                language.name
+              }}</span>
+              <span class="language-level text-white text-sm italic">{{
+                language.level
+              }}</span>
             </li>
           }
         </ul>

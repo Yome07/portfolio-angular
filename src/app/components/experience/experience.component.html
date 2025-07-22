@@ -1,35 +1,47 @@
 <div class="experience-container">
+  <h2>Expériences professionnelles</h2>
   <div class="timeline">
     @for (experience of experiences(); track experience.start) {
       <div class="timeline-item" [class.fade-in]="true">
         <!-- Timeline dates -->
         <div class="timeline-dates">
           <div class="timeline-date start-date capitalize-first">
-            {{ experience.start | date: 'MMMM yyyy' }}
-          </div>
-          <div class="timeline-line"></div>
-          <div class="timeline-date end-date capitalize-first">
             {{
               experience.end ? (experience.end | date: 'MMMM yyyy') : 'Présent'
             }}
           </div>
+          <div class="timeline-line"></div>
+          <div class="timeline-date end-date capitalize-first">
+            {{ experience.start | date: 'MMMM yyyy' }}
+          </div>
         </div>
 
         <!-- Experience card -->
-        <div class="experience-card">
+        <div
+          class="bg-cyan-950 border-t-8 border-cyan-800 rounded shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform p-6 flex-1 hover:-translate-y-1"
+        >
           <!-- En-tête de la carte -->
-          <div class="card-header">
-            <div class="card-subtitle">
+          <div class="mb-4">
+            <div
+              class="text-emerald-300 text-sm font-medium mb-2 uppercase tracking-wide"
+            >
               {{ experience.company }} | {{ experience.location }}
             </div>
-            <h3 class="card-title">{{ experience.role }}</h3>
+            <h3 class="text-xl font-semibold mb-4">
+              {{ experience.role }}
+            </h3>
           </div>
 
           <!-- Liste des tâches -->
-          <div class="card-content">
+          <div class="mb-6">
             <ul class="tasks-list">
               @for (task of experience.tasks; track task) {
-                <li class="task-item">{{ task }}</li>
+                <li class="task-item mb-6 leading-relaxed mb-3 pl-6 relative">
+                  <span class="absolute left-0 top-0.5 text-emerald-300 text-xs"
+                    >▶</span
+                  >
+                  {{ task }}
+                </li>
               }
             </ul>
           </div>
@@ -37,9 +49,12 @@
           <!-- Badges des compétences -->
           @if (experience.skills && experience.skills.length > 0) {
             <div class="card-footer">
-              <div class="skills-badges">
+              <div class="skills-badges flex-wrap flex gap-2">
                 @for (skill of experience.skills; track skill) {
-                  <span class="skill-badge">{{ skill }}</span>
+                  <span
+                    class="skill-badge px-3 py-1 bg-emerald-300 text-cyan-900 text-sm font-medium rounded mb-2 mr-2"
+                    >{{ skill }}</span
+                  >
                 }
               </div>
             </div>

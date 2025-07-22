@@ -1,11 +1,19 @@
-<section id="contact" class="contact-section">
+<section
+  id="contact"
+  class="contact-section py-16 bg-cyan-900 text-white text-center"
+>
   <div class="container">
-    <h2 class="section-title">Contact</h2>
-
-    <div class="contact-buttons">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Contact</h2>
+      <p class="text-lg max-w-2xl mx-auto">
+        Pour me contacter, vous pouvez m'envoyer un email ou un message sur
+        LinkedIn.
+      </p>
+    </div>
+    <div class="flex gap-8 justify-center flex-wrap">
       <a
         [href]="getEmailLink()"
-        class="btn btn-primary"
+        class="btn btn-primary rounded bg-emerald-300 text-cyan-900 hover:bg-emerald-500"
         title="Envoyer un email"
       >
         <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
@@ -20,7 +28,7 @@
         [href]="getLinkedInLink()"
         target="_blank"
         rel="noopener noreferrer"
-        class="btn btn-secondary"
+        class="btn btn-secondary rounded text-emerald-300 hover:text-emerald-500 border-2 border-emerald-300 hover:border-emerald-500"
         title="Voir mon profil LinkedIn"
       >
         <svg class="icon" viewBox="0 0 24 24" fill="currentColor">

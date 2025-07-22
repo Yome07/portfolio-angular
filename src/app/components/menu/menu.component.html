@@ -1,10 +1,14 @@
-<nav class="menu-container">
+<nav class="menu-container bg-cyan-900">
   <!-- Photo de profil -->
   <div class="profile-section">
     <div class="profile-image">
       <img src="assets/images/portrait.jpg" alt="Guillaume Amselle Andreux" />
     </div>
-    <h2 class="profile-name">Guillaume Amselle Andreux</h2>
+    @if (profile(); as profile) {
+      <h2 class="profile-name">
+        {{ profile.firstname }}<br />{{ profile.lastname }}
+      </h2>
+    }
   </div>
 
   <!-- Menu de navigation -->
@@ -31,6 +35,7 @@
         target="_blank"
         rel="noopener noreferrer"
         [attr.aria-label]="social.name"
+        class="hover:bg-emerald-300"
       >
         <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
           <path [attr.d]="social.icon" />

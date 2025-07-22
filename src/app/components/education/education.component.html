@@ -1,15 +1,26 @@
 <section class="trainings">
+  <h2>Formations</h2>
   <div class="trainings-container">
     @for (training of trainings(); track training.year) {
       <div class="training-item">
         <div class="training-year">{{ training.year }}</div>
-        <div class="training-card">
-          <h4 class="training-institution">{{ training.institution }}</h4>
-          <h3 class="training-title">{{ training.title }}</h3>
+        <div
+          class="training-card bg-cyan-950 border-t-8 border-cyan-800 rounded shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform p-6 flex-1 hover:-translate-y-1"
+        >
+          <h4
+            class="text-emerald-300 text-sm font-medium mb-2 uppercase tracking-wide"
+          >
+            {{ training.institution }}
+          </h4>
+          <h3 class="text-xl font-semibold mb-4">
+            {{ training.title }}
+          </h3>
           @if (training.details.length > 0) {
-            <ul class="training-details">
+            <ul class="training-details m-0 pl-5">
               @for (detail of training.details; track detail) {
-                <li>{{ detail }}</li>
+                <li class="mb-6 leading-relaxed mb-3 pl-6 relative">
+                  {{ detail }}
+                </li>
               }
             </ul>
           }

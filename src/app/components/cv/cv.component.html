@@ -1,9 +1,9 @@
-<section id="cv" class="py-16 bg-white">
+<section id="cv" class="py-16 bg-cyan-900 text-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Titre de la section -->
     <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-gray-900 mb-4">Mon CV</h2>
-      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4">Mon CV</h2>
+      <p class="text-lg max-w-2xl mx-auto">
         Découvrez mon parcours professionnel, mes compétences et ma formation
       </p>
     </div>
@@ -12,15 +12,15 @@
     <div class="mb-8">
       <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
         <!-- Menu de navigation -->
-        <nav class="flex bg-gray-100 rounded-lg p-1">
+        <nav class="flex bg-cyan-950 rounded p-1">
           <button
             (click)="selectSection('skills')"
             [class]="
               isSectionActive('skills')
-                ? 'bg-white text-blue-600 shadow-sm'
-                : 'text-gray-600 hover:text-gray-900'
+                ? 'bg-emerald-300 text-cyan-900 shadow-sm'
+                : 'text-white hover:text-gray-400'
             "
-            class="px-4 py-2 rounded-md font-medium transition-all duration-200 text-sm sm:text-base"
+            class="px-4 py-2 rounded font-medium transition-all duration-200 text-sm sm:text-base"
           >
             Compétences
           </button>
@@ -28,10 +28,10 @@
             (click)="selectSection('experience')"
             [class]="
               isSectionActive('experience')
-                ? 'bg-white text-blue-600 shadow-sm'
-                : 'text-gray-600 hover:text-gray-900'
+                ? 'bg-emerald-300 text-cyan-900 shadow-sm'
+                : 'text-white hover:text-gray-400'
             "
-            class="px-4 py-2 rounded-md font-medium transition-all duration-200 text-sm sm:text-base"
+            class="px-4 py-2 rounded font-medium transition-all duration-200 text-sm sm:text-base"
           >
             Expériences pro
           </button>
@@ -39,10 +39,10 @@
             (click)="selectSection('education')"
             [class]="
               isSectionActive('education')
-                ? 'bg-white text-blue-600 shadow-sm'
-                : 'text-gray-600 hover:text-gray-900'
+                ? 'bg-emerald-300 text-cyan-900 shadow-sm'
+                : 'text-white hover:text-gray-400'
             "
-            class="px-4 py-2 rounded-md font-medium transition-all duration-200 text-sm sm:text-base"
+            class="px-4 py-2 rounded font-medium transition-all duration-200 text-sm sm:text-base"
           >
             Formations
           </button>
@@ -51,7 +51,7 @@
         <!-- Bouton téléchargement PDF -->
         <button
           (click)="downloadCV()"
-          class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-emerald-300 text-cyan-900 font-semibold rounded hover:bg-emerald-500 transition-colors duration-200 shadow-lg hover:shadow-xl"
         >
           <svg
             class="w-5 h-5"

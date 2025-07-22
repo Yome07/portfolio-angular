@@ -99,18 +99,3 @@ button.active {
     background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
   }
 }
-
-// Amélioration visuelle du conteneur principal
-#cv {
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
-  }
-}

@@ -1,8 +1,9 @@
 {
   "profile": {
-    "name": "Guillaume Amselle Andreux",
+    "firstname": "Guillaume",
+    "lastname": "Amselle Andreux",
     "title": "Développeur Full Stack",
-    "bio": "Après plus de 10 ans en tant que webmaster et chargé de projets web, je me suis spécialisé en développement web full‑stack. Actuellement en CDA - formation d'architecte logiciel, j'allie gestion de sites web et conception UX/UI pour créer des projets à fort impact. Je souhaite intégrer une entreprise valorisant l'humain et l'innovation.",
+    "bio": "Après plus de 10 ans en tant que webmaster et chargé de projets web,  j'ai décidé de me spécialiser en développement web full-stack.<br />Après une formation de CDA, je suis une formation de Software Engineer (RNCP niv. 7) chez DataScientest pour une durée de 18 mois en alternance chez BNP Paribas en tant que Développeur Full Stack, sur la stack Angular Spring Boot.",
     "cv": "CV_developpeur_fullstack_Guillaume_Amselle_Andreux.pdf"
   },
   "social": [
