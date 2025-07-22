@@ -118,12 +118,12 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #f3f4f6;
-    color: #4b5563;
+    //background-color: #f3f4f6;
+    //color: #4b5563;
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: var(--emreld-300);
+      //color: var(--emerald-300);
       //color: white;
       transform: translateY(-2px);
     }

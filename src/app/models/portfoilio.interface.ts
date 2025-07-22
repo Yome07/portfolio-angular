@@ -5,6 +5,7 @@ export interface Profile {
   title: string;
   bio: string;
   cv: string;
+  imagePath: string; // URL de l'image du profil
 }
 
 // Interface pour les informations de contact

@@ -3,13 +3,13 @@
     <div class="container mx-auto text-center">
       <p>
         @if (profile(); as profile) {
-          <span>{{ profile.name }} </span>
+          <span>{{ profile.firstname }} {{ profile.lastname }}</span>
         }
         | &copy; 2025 | Tous droits réservés |
         @if (termsOfUse(); as termsOfUse) {
           <button
             (click)="openTermsModal()"
-            class="text-blue-400 hover:underline"
+            class="text-emerald-300 hover:underline"
           >
             {{ termsOfUse.title }}
           </button>
