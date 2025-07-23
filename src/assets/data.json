@@ -317,15 +317,6 @@
       "imagePath": "images/radiolab.png"
     },
     {
-      "title": "Ancrages",
-      "subtitle": "Centre de ressources dédié à l'histoire et aux mémoires des migrations en Provence-Alpes Côte d’Azur",
-      "year": "2014 - 2016",
-      "description": "Mises à jour du site, du CMS Wordpress, du template, des plugins. Modification des feuilles de style.",
-      "link": "https://web.archive.org/web/20160610155021/http://ancrages.org/",
-      "technologies": ["WordPress", "HTML", "CSS", "PHP"],
-      "imagePath": "images/ancrages300x200.png"
-    },
-    {
       "title": "ALJEPA",
       "subtitle": "Foyer de jeunes travailleurs d'Aix-en-Provence",
       "year": "2013",

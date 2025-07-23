@@ -49,29 +49,30 @@
     >
       <div class="language-content pr-12">
         <h3 class="language-title text-xl font-semibold mb-4">Langues</h3>
-        <ul class="language-items">
-          @for (
-            language of languages();
-            track language.name;
-            let isLast = $last
-          ) {
-            <li
-              [ngClass]="{
-                'flex justify-between items-center py-2 border-b border-gray-50': true,
-                'mb-2': !isLast,
-                'mb-0 border-b-0': isLast,
-              }"
-            >
-              <span class="text-emerald-300 capitalize font-medium">{{
-                language.name
-              }}</span>
-              <span class="language-level text-white text-sm italic">{{
-                language.level
-              }}</span>
-            </li>
-          }
-        </ul>
       </div>
+      <ul class="language-items -mx-6 px-6">
+        @for (
+          language of languages();
+          track language.name;
+          let isLast = $last
+        ) {
+          <li
+            [ngClass]="{
+              'flex justify-between items-center py-2 border-b border-gray-50 w-full': true,
+              'mb-2': !isLast,
+              'mb-0 border-b-0': isLast,
+            }"
+          >
+            <span class="text-emerald-300 capitalize font-medium">{{
+              language.name
+            }}</span>
+            <span class="language-level text-white text-sm italic">{{
+              language.level
+            }}</span>
+          </li>
+        }
+      </ul>
+
       <div class="language-icon">
         <svg
           xmlns="http://www.w3.org/2000/svg"

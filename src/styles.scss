@@ -14,7 +14,7 @@ section {
   padding: 2rem;
 
   // Ajuste le padding top pour compenser le bouton hamburger sur mobile (en dessous de md)
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     padding-top: 4rem;
   }
 }
@@ -30,14 +30,14 @@ button {
 
 // Styles pour le layout responsive
 .flex {
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     // Desktop: layout flex normal avec sidebar fixe
     aside {
       flex-shrink: 0;
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     // Mobile: contenu principal prend toute la largeur
     main {
       width: 100%;

@@ -1,7 +1,7 @@
 <div class="min-h-screen bg-cyan-900 text-white">
   <!-- Bouton hamburger pour mobile (seulement en dessous de md) -->
   <button
-    class="fixed top-4 left-4 z-50 md:hidden bg-gray-800 text-white p-2 rounded-md shadow-lg"
+    class="fixed top-4 left-4 z-50 lg:hidden bg-gray-800 text-white p-2 rounded-md shadow-lg"
     (click)="toggleMenu()"
     [attr.aria-expanded]="isMenuOpen"
     aria-label="Toggle navigation menu"
@@ -27,7 +27,7 @@
   <!-- Overlay mobile (seulement en dessous de md) -->
   <div
     *ngIf="isMenuOpen"
-    class="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+    class="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
     (click)="toggleMenu()"
     (keydown.escape)="toggleMenu()"
     tabindex="0"
@@ -40,7 +40,7 @@
     <!-- Desktop: toujours visible -->
     <!-- Mobile: overlay avec animation slide depuis la gauche -->
     <aside
-      class="w-64 bg-gray-800 shadow-lg md:block md:static md:translate-x-0 fixed inset-y-0 left-0 z-50 transform transition-transform duration-300 ease-in-out"
+      class="w-64 bg-gray-800 shadow-lg lg:block lg:static lg:translate-x-0 fixed inset-y-0 left-0 z-50 transform transition-transform duration-300 ease-in-out"
       [class.translate-x-0]="isMenuOpen"
       [class.-translate-x-full]="!isMenuOpen"
     >
@@ -52,7 +52,7 @@
     </aside>
 
     <!-- Contenu principal à droite -->
-    <main class="flex-1 md:ml-0 overflow-y-auto">
+    <main class="flex-1 lg:ml-0 overflow-y-auto">
       <div class="max-w-6xl mx-auto">
         <section id="home">
           <app-hero></app-hero>

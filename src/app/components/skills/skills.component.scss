@@ -47,7 +47,6 @@
   // Centrer la card des langues si elle est seule sur une ligne
   .language-card {
     grid-column: 1 / -1;
-    max-width: 350px;
     justify-self: center;
   }
 
