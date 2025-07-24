@@ -1,6 +1,8 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environement';
+import { map } from 'rxjs/operators';
 import {
   Education,
   Experience,
@@ -16,38 +18,49 @@ import {
   providedIn: 'root',
 })
 export class DataService {
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = environment.production
+    ? '/assets/data.json'
+    : 'http://localhost:3000';
 
   private http = inject(HttpClient);
 
+  private getData<T>(endpoint: string): Observable<T> {
+    if (environment.production) {
+      return this.http
+        .get<any>(`${this.apiUrl}`)
+        .pipe(map((data) => data[endpoint] as T));
+    }
+    return this.http.get<T>(`${this.apiUrl}/${endpoint}`);
+  }
+
   getProfile(): Observable<Profile> {
-    return this.http.get<Profile>(`${this.apiUrl}/profile`);
+    return this.getData<Profile>('profile');
   }
 
   getSocialList(): Observable<SocialLink[]> {
-    return this.http.get<SocialLink[]>(`${this.apiUrl}/social`);
+    return this.getData<SocialLink[]>('social');
   }
 
   getSkillsList(): Observable<Skill[]> {
-    return this.http.get<Skill[]>(`${this.apiUrl}/skills`);
+    return this.getData<Skill[]>('skills');
   }
 
   getLanguagesList(): Observable<Language[]> {
-    return this.http.get<Language[]>(`${this.apiUrl}/languages`);
+    return this.getData<Language[]>('languages');
   }
   getExperiencesList(): Observable<Experience[]> {
-    return this.http.get<Experience[]>(`${this.apiUrl}/experiences`);
+    return this.getData<Experience[]>('experiences');
   }
 
   getTrainingsList(): Observable<Education[]> {
-    return this.http.get<Education[]>(`${this.apiUrl}/trainings`);
+    return this.getData<Education[]>('trainings');
   }
 
   getProjectsList(): Observable<Project[]> {
-    return this.http.get<Project[]>(`${this.apiUrl}/project`);
+    return this.getData<Project[]>('project');
   }
 
   getTermsOfUse(): Observable<TermsOfUse> {
-    return this.http.get<TermsOfUse>(`${this.apiUrl}/terms-of-use`);
+    return this.getData<TermsOfUse>('terms-of-use');
   }
 }
