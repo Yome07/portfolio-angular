@@ -18,16 +18,40 @@
   <!-- Menu de navigation -->
   <ul class="navigation-menu">
     <li>
-      <a href="#home" (click)="scrollToSection('hero')">À propos</a>
+      <a
+        href="#home"
+        (click)="scrollToSection('hero')"
+        [class.active]="activeSection() === 'home'"
+      >
+        À propos
+      </a>
     </li>
     <li>
-      <a href="#portfolio" (click)="scrollToSection('portfolio')">Portfolio</a>
+      <a
+        href="#portfolio"
+        (click)="scrollToSection('portfolio')"
+        [class.active]="activeSection() === 'portfolio'"
+      >
+        Portfolio
+      </a>
     </li>
     <li>
-      <a href="#cv" (click)="scrollToSection('cv')">CV</a>
+      <a
+        href="#cv"
+        (click)="scrollToSection('cv')"
+        [class.active]="activeSection() === 'cv'"
+      >
+        CV
+      </a>
     </li>
     <li>
-      <a href="#contact" (click)="scrollToSection('contact')">Contact</a>
+      <a
+        href="#contact"
+        (click)="scrollToSection('contact')"
+        [class.active]="activeSection() === 'contact'"
+      >
+        Contact
+      </a>
     </li>
   </ul>
 
