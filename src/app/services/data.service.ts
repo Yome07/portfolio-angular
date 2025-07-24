@@ -19,7 +19,7 @@ import {
 })
 export class DataService {
   private apiUrl = environment.production
-    ? './assets/data.json'
+    ? `./assets/data.json?v=${Date.now()}`
     : 'http://localhost:3000';
 
   private http = inject(HttpClient);
