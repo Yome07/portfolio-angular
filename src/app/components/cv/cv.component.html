@@ -10,9 +10,9 @@
 
     <!-- Navigation du CV -->
     <div class="mb-8">
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <div class="flex flex-col xl:flex-row justify-center items-center gap-4">
         <!-- Menu de navigation -->
-        <nav class="flex bg-cyan-950 rounded p-1">
+        <nav class="flex nowrap bg-cyan-950 rounded p-1">
           <button
             (click)="selectSection('skills')"
             [class]="
@@ -20,7 +20,7 @@
                 ? 'bg-emerald-300 text-cyan-900 shadow-sm'
                 : 'text-white hover:text-gray-400'
             "
-            class="px-4 py-2 rounded font-medium transition-all duration-200 text-sm sm:text-base"
+            class="px-2 sm:px-4 px-4 py-2 rounded font-medium transition-all duration-200 text-sm sm:text-base whitespace-nowrap"
           >
             Compétences
           </button>
@@ -31,7 +31,7 @@
                 ? 'bg-emerald-300 text-cyan-900 shadow-sm'
                 : 'text-white hover:text-gray-400'
             "
-            class="px-4 py-2 rounded font-medium transition-all duration-200 text-sm sm:text-base"
+            class="px-2 sm:px-4 px-4 py-2 rounded font-medium transition-all duration-200 text-sm sm:text-base whitespace-nowrap"
           >
             Expériences pro
           </button>
@@ -42,7 +42,7 @@
                 ? 'bg-emerald-300 text-cyan-900 shadow-sm'
                 : 'text-white hover:text-gray-400'
             "
-            class="px-4 py-2 rounded font-medium transition-all duration-200 text-sm sm:text-base"
+            class="px-2 sm:px-4 px-4 py-2 rounded font-medium transition-all duration-200 text-sm sm:text-base whitespace-nowrap"
           >
             Formations
           </button>

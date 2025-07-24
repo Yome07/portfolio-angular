@@ -16,7 +16,7 @@
     <div class="grid gap-8 md:gap-12">
       @for (project of projects(); track project.title) {
         <div
-          class="bg-cyan-950 rounded shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+          class="bg-cyan-950 rounded shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-t-8 border-cyan-800"
         >
           <div class="xl:flex">
             <!-- Image du projet -->
@@ -45,12 +45,12 @@
                 }
                 <!-- Bordure droite décalée -->
                 <div
-                  class="image-border xl:absolute xl:bg-cyan-900 xl:w-3 xl:-right-3"
+                  class="image-border-right xl:absolute xl:bg-cyan-900 xl:w-3 xl:-right-3"
                 ></div>
 
                 <!-- Bordure bas décalée -->
                 <div
-                  class="image-border xl:absolute xl:bg-cyan-900 xl:h-3 xl:-bottom-3"
+                  class="image-border-bottom xl:absolute xl:bg-cyan-900 xl:h-3 xl:-bottom-3"
                 ></div>
               </div>
             </div>

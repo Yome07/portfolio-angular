@@ -3,7 +3,7 @@ export interface Profile {
   firstname: string;
   lastname: string;
   title: string;
-  bio: string;
+  bio: string[];
   cv: string;
   imagePath: string; // URL de l'image du profil
 }

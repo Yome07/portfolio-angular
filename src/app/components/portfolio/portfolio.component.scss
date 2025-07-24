@@ -63,9 +63,14 @@
   }
 }
 
-.image-border {
+.image-border-right {
   top: 30px;
   height: calc(100% - 20px);
+}
+
+.image-border-bottom {
+  left: 30px;
+  width: calc(100% - 20px);
 }
 
 // Responsive pour mobile
@@ -83,9 +88,14 @@
       gap: 0.5rem;
     }
   }
-  .image-border {
+  .image-border-right {
     top: unset;
     height: unset;
+  }
+
+  .image-border-bottom {
+    left: unset;
+    width: unset;
   }
 }
 
