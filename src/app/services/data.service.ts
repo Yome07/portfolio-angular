@@ -36,6 +36,9 @@ export class DataService {
   }
 
   getProfile(): Observable<Profile> {
+    alert(
+      `Environment: ${environment.envName}, Production: ${environment.production}`
+    );
     alert('Service getProfile() appelé');
     return this.getData<Profile>('profile');
   }
