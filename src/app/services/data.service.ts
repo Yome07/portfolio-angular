@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from '../../environments/environement.development';
+import { environment } from '../../environments/environment';
 import { map } from 'rxjs/operators';
 import {
   Education,
@@ -18,9 +18,9 @@ import {
   providedIn: 'root',
 })
 export class DataService {
-  private apiUrl = environment.production
-    ? `./assets/data.json?v=${Date.now()}`
-    : 'http://localhost:3000';
+  // private apiUrl = environment.production
+  //   ? `./assets/data.json?v=${Date.now()}`
+  //   : 'http://localhost:3000';
 
   private http = inject(HttpClient);
 
@@ -28,11 +28,11 @@ export class DataService {
     if (environment.production) {
       alert('environment.production is true, using assets/data.json');
       return this.http
-        .get<Record<string, T>>(`${this.apiUrl}`)
+        .get<Record<string, T>>(`${environment.apiUrl}`)
         .pipe(map((data) => data[endpoint] as T));
     }
     alert('environment.production is false, using http://localhost:3000');
-    return this.http.get<T>(`${this.apiUrl}/${endpoint}`);
+    return this.http.get<T>(`${environment.apiUrl}/${endpoint}`);
   }
 
   getProfile(): Observable<Profile> {
