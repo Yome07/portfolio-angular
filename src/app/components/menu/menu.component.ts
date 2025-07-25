@@ -31,7 +31,6 @@ export class MenuComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.setupScrollListener();
-    console.log(`Environment: ${environment.envName}`);
   }
 
   ngOnDestroy() {

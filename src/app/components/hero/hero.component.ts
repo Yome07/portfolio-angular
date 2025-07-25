@@ -10,7 +10,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 })
 export class HeroComponent {
   readonly dataService = inject(DataService);
-  profile = toSignal(this.dataService.getProfile());
+  readonly profile = toSignal(this.dataService.getProfile());
 
   downloadCV(): void {
     // Logique pour télécharger le CV
