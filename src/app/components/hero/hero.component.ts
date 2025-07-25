@@ -1,6 +1,7 @@
 import { Component, effect, inject, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { catchError, of } from 'rxjs';
 
 @Component({
   selector: 'app-hero',
@@ -10,7 +11,14 @@ import { toSignal } from '@angular/core/rxjs-interop';
 })
 export class HeroComponent implements OnInit {
   readonly dataService = inject(DataService);
-  profile = toSignal(this.dataService.getProfile());
+  profile = toSignal(
+    this.dataService.getProfile().pipe(
+      catchError((error: any) => {
+        alert('ERREUR Profile: ' + error.message);
+        return of(null); // Retourne null en cas d'erreur
+      })
+    )
+  );
 
   constructor() {
     // Effect pour surveiller les changements du signal
@@ -21,12 +29,15 @@ export class HeroComponent implements OnInit {
           '2. Données reçues: ' + Object.keys(profileData).length + ' éléments'
         );
         alert('3. Signal mis à jour automatiquement');
+      } else if (profileData === null) {
+        alert('4. Erreur détectée dans le signal');
       }
     });
   }
 
   ngOnInit() {
     alert('1. Composant chargé');
+    console.log('Profile dans ngOnInit:', this.profile()); // undefined
 
     // Le signal est undefined ici car la requête HTTP n'est pas encore terminée
     console.log('Profile dans ngOnInit:', this.profile()); // undefined

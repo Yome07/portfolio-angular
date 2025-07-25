@@ -34,6 +34,7 @@ export class DataService {
   }
 
   getProfile(): Observable<Profile> {
+    alert('Service getProfile() appelé');
     return this.getData<Profile>('profile');
   }
 
