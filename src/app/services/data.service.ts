@@ -26,10 +26,12 @@ export class DataService {
 
   private getData<T>(endpoint: string): Observable<T> {
     if (environment.production) {
+      alert('environment.production is true, using assets/data.json');
       return this.http
-        .get<any>(`${this.apiUrl}`)
+        .get<Record<string, T>>(`${this.apiUrl}`)
         .pipe(map((data) => data[endpoint] as T));
     }
+    alert('environment.production is false, using http://localhost:3000');
     return this.http.get<T>(`${this.apiUrl}/${endpoint}`);
   }
 
