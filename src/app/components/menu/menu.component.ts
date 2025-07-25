@@ -11,6 +11,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { DataService } from '../../services/data.service';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { environment } from '../../../environments/environement';
 
 @Component({
   selector: 'app-menu',
@@ -30,6 +31,7 @@ export class MenuComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.setupScrollListener();
+    console.log(`Environment: ${environment.envName}`);
   }
 
   ngOnDestroy() {
