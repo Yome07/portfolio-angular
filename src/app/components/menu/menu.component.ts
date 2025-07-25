@@ -11,7 +11,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { DataService } from '../../services/data.service';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { environment } from '../../../environments/environement';
+import { environment } from '../../../environments/environement.development';
 
 @Component({
   selector: 'app-menu',
